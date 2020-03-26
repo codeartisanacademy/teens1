@@ -31,13 +31,14 @@ print('-' * 20)
 
 delta = independence_day - datetime.date.today()
 
-print(delta)
+print(delta.days/30)
 
 print('which is {0} seconds'.format(delta.total_seconds()))
 
-one_week = datetime.timedelta(weeks=1)
 
-next_week = datetime.date.today() + one_week
+one_week = datetime.timedelta(weeks=1)
+next_week = today + one_week
+
 
 # check http://strftime.org for complete format encoding
 print(next_week.strftime('%a %d, %Y'))
