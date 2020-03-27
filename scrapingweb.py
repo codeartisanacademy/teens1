@@ -15,5 +15,9 @@ news_contributor = soup.find(id='newsContributor')
 
 list_news = news_contributor.select('.titleNews')
 
-for n in list_news:
-    print(n.get_text())
+print(soup.title)
+
+print(soup.select('.channelLatest')[0].get_text())
+
+#for n in list_news:
+#    print(n.get_text())
